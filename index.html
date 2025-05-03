@@ -10,7 +10,7 @@
 </head>
 <body class="m-0 p-0 box-border bg-amber-100 font-sans">
     <!-- header -->
-    <header>
+    <header id="home-section">
         <div class="h-20 w-full  flex items-center justify-between" >
             <div class="logo">
                 <h1 class="ml-5 lg:ml-40 font-semibold text-3xl">Gaurav<span class="text-orange-500">Restron.</span></h1>
@@ -23,12 +23,12 @@
                     <li class="relative group">
                         <a class="dropdown flex gap-2 text-xl text-gray-700 " href="#">Pages
                             <img class="w-6 " src="./assets/images/dropdown-img.png" alt=""></a>
-                    <div class="dropdown-enter bg-orange-400 h-30 w-30 absolute hidden group-hover:block shadow-lg">
-                            <ol class="p-4">
-                                <li><a class="hover:bg-amber-600" href="#">Home</a></li>
-                                <li><a href="#about-section">About</a></li>
-                                <li><a href="#">Menu</a></li>
-                                <li><a href="#">Blog</a></li>
+                    <div class="dropdown-enter bg-orange-300 rounded-xl text-zinc-500 h-40 w-40 absolute hidden group-hover:block shadow-lg  p-3">
+                            <ol class="p-4 text-center">
+                                <li><a class="hover:text-amber-600" href="#home-section">Home</a></li>
+                                <li><a class="hover:text-amber-600" href="#about-section">About</a></li>
+                                <li><a class="hover:text-amber-600" href="#">Menu</a></li>
+                                <li><a class="hover:text-amber-600" href="#">Blog</a></li>
                             </ol>
                     </div></li>
                     <li><a class="text-xl opacity-50" href="#">Blog</a></li>
@@ -87,6 +87,7 @@
             <h1 class="text-xl font-semibold">Cocktails</h1></div>
     </div>
     <!-- payment step -->
+    <div class="payment">
     <div class="mt-15">
         <h1 class="text-5xl font-semibold text-center">Easy Order Steps</h1>
     </div>
@@ -107,6 +108,7 @@
             <h1 class="text-2xl font-semibold text-center">Enjoy Your Meal</h1>
             <img src="./assets/images/step_04.png" alt="">
         </div>
+    </div>
     </div>
     <!-- About -->
     <!-- footer -->
@@ -131,8 +133,8 @@
         </div>
         <div class="mt-5  px-10 flex flex-col gap-4">
             <h1 class="font-semibold text-2xl ">Links</h1>
-            <a  class="hover:text-amber-600" href="#">Home</a>
-            <a  class=" hover:text-amber-600" href="#">About Us</a>
+            <a  class="hover:text-amber-600" href="#home-section">Home</a>
+            <a  class=" hover:text-amber-600" href="#about-section">About Us</a>
             <a  class="hover:text-amber-600" href="#">Services</a>
             <a  class="hover:text-amber-600" href="#">Menu</a>
             <a  class="hover:text-amber-600" href="#">Blog</a>
