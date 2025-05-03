@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="shortcut icon" href="./assets/images/food-favicon.png" type="images/x-icon">
+    <link rel="stylesheet" href="./src/output.css">
+    <title>Food court</title>
+</head>
+<body class="m-0 p-0 box-border bg-amber-100 font-sans">
+    <!-- header -->
+    <header>
+        <div class="h-20 w-full  flex items-center justify-between" >
+            <div class="logo">
+                <h1 class="ml-5 lg:ml-40 font-semibold text-3xl">Gaurav<span class="text-orange-500">Restron.</span></h1>
+            </div>
+            <nav class="flex gap-5">
+                <ul class="nav-links hidden lg:flex gap-8  ">
+                    <li><a class="text-xl font-semibold" href="#">Home</a></li>
+                    <li><a class="text-xl opacity-50" href="#">About</a></li>
+                    <li><a class="text-xl opacity-50" href="#">Menu</a></li>
+                    <li class="relative group">
+                        <a class="dropdown flex gap-2 text-xl text-gray-700 " href="#">Pages
+                            <img class="w-6 " src="./assets/images/dropdown-img.png" alt=""></a>
+                    <div class="dropdown-enter bg-orange-400 h-30 w-30 absolute hidden group-hover:block shadow-lg">
+                            <ol class="p-4">
+                                <li><a class="hover:bg-amber-600" href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Menu</a></li>
+                                <li><a href="#">Blog</a></li>
+                            </ol>
+                    </div></li>
+                    <li><a class="text-xl opacity-50" href="#">Blog</a></li>
+                    <li><a class="text-xl opacity-50" href="#">Contact</a></li>
+                </ul>
+                <div class="actions hidden lg:flex gap-6 mr-40">
+                    <a href="#" class="login text-xl opacity-50">Login</a>
+                    <div class="cart relative">
+                        <span class="cart-icon">
+                            <img class="w-6" src="./assets/images/grocery-store.png" alt="">
+                            <!-- <i class="w-30 ri-shopping-bag-4-fill"></i> -->
+                        </span>
+                        <span class="cart-count absolute bottom-4 left-4 bg-orange-500 w-6 h-6 rounded-full text-center ">2</span>
+                    </div>
+                </div>
+                <i class="ri-menu-line lg:hidden text-2xl mr-5"></i>
+            </nav>
+        </div>
+    </header>
+    <!-- main -->
+    <section class="lg:flex gap-0">
+        <div>
+        <div class="hero-text ">
+            <h1 class=" ml-5 text-5xl leading-16 lg:leading-20 lg:text-7xl font-semibold lg:ml-40 lg:mt-30 lg:w-xl">Enjoy Our <br> Delicious Meal</h1>
+            <p class=" ml-5 text-md mr-4  font-semibold  lg:ml-40 lg:font-medium mt-10 lg:w-xl">Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin ac rutrum neque, vel congue tellus duis venenatis nisi ligulavarius.</p>
+        </div>
+        <div class="location-search ml-5 mt-10 lg:mt-10 lg:ml-40">
+            <select name="" id="" class=" rounded-full">
+                <option value="modinagar">Modinagar</option>
+                <option value="ghazibad">Ghaziabad</option>
+                <option value="noida">Noida</option>
+            </select>
+            <i class="ri-map-pin-line text-amber-700"></i>
+            <input type="text" name="" id="" placeholder="Drop your Location" class="border-none outline-none" >
+            <button class="bg-linear-65 from-orange-500 to-orange-900 mt-5 w-50 h-15 lg:ml-25 rounded-full text-md text-white font-semibold shadow-orange-900">Find Restaurant</button>
+        </div>
+        </div>
+        <div class="hero-image">
+            <img class="w-2xl mt-10 mb-10" src="./assets/images/food-removebg-preview.png" alt="">
+        </div>
+    </section>
+    <!-- food variety -->
+    <div class="food-variety flex flex-col items-center gap-10 lg:flex-row lg:gap-16 lg:ml-40 lg:mt-20">
+        <div class="fast-food  bg-linear-to-r from-amber-600 to-orange-700  w-60 h-20 rounded-full flex items-center  gap-10  shadow-xl/30">
+            <img class="w-18 h-18 ml-5 border-2 rounded-full" src="./assets/images/fast-food.png" alt="">
+            <h1 class="text-xl font-semibold">Fast Food</h1>
+        </div>
+        <div class="fast-food bg-linear-to-r from-amber-600 to-orange-700 w-60 h-20 rounded-full flex items-center  gap-10  shadow-xl/30">
+            <img class="w-18 h-18 ml-5 border-2 rounded-full" src="./assets/images/non-veg.png" alt="">
+            <h1 class="text-xl font-semibold" >Non-Veg</h1></div>
+        <div class="fast-food bg-linear-to-r from-amber-600 to-orange-700  w-60 h-20 rounded-full flex items-center  gap-10  shadow-xl/30">
+            <img  class="w-18 h-18 ml-5 border-2 rounded-full"src="./assets/images/dessert.png" alt="">
+            <h1 class="text-xl font-semibold">Dessert</h1></div>
+        <div class="fast-food bg-linear-to-r from-amber-600 to-orange-700  w-60 h-20 rounded-full flex items-center  gap-10  shadow-xl/30">
+            <img class="w-18 h-18 ml-5 border-2 rounded-full" src="./assets/images/cocktail.png" alt="">
+            <h1 class="text-xl font-semibold">Cocktails</h1></div>
+    </div>
+    <!-- payment step -->
+    <div class="mt-15">
+        <h1 class="text-5xl font-semibold text-center">Easy Order Steps</h1>
+    </div>
+    <div class="easy-order-step flex flex-col items-center mt-20 lg:flex-row lg:mt-20 lg:ml-40 lg:gap-10">
+        <div class="step1">
+            <h1 class="text-2xl font-semibold text-center">Select your Restaurant</h1>
+            <img class="" src="./assets/images/step_01.png" alt="">
+        </div>
+        <div class="step2">
+            <h1 class="text-2xl font-semibold text-center">Select your Dish</h1>
+            <img src="./assets/images/step_02.png" alt="">
+        </div>
+        <div class="step3">
+            <h1 class="text-2xl font-semibold text-center">Pay Cash/Online</h1>
+            <img src="./assets/images/step_03.png" alt="">
+        </div>
+        <div class="step4">
+            <h1 class="text-2xl font-semibold text-center">Enjoy Your Meal</h1>
+            <img src="./assets/images/step_04.png" alt="">
+        </div>
+    </div>
+    <!-- About -->
+    <!-- footer -->
+    <div class="subscribe lg:flex lg:items-center lg:justify-items-stretch h-50 gap-10 mt-10 bg-orange-500">
+        <h1 class="text-2xl p-10 lg:text-5xl lg:font-semibold lg:ml-40 text-white"> Subscribe to our newsletter</h1>
+        <div class="bg-zinc-100 ml-5 mr-5 h-10 lg:w-130 lg:h-14 flex justify-between rounded-full">
+            <input class="w-100 lg:w-full lg:text-xl px-4"  type="email" placeholder="Your email">
+            <button class="w-full lg:text-3xl font-semibold bg-zinc-800 text-white  rounded-full lg:px-5">Subscribe Now</button>
+        </div>
+    </div>
+    <!-- last footer -->
+    <div class=" lg:grid lg:grid-cols-5 gap-20 py-10 bg-zinc-900 text-white">
+        <div class="lg:col-span-2 lg:ml-40 px-10">
+            <h1 class="text-3xl font-semibold text-white">Gaurav<span class="text-orange-500">Restron</span></h1>
+            <p class="pt-8 text-xl">Curabitur posuere felis in massa pulvinar, nec mollis nibh eleifend. Maecenas turpis mi. Vivamus pulvinar lobortis vehicula pellentesque.</p>
+            <div class="social-icons mt-5 text-2xl text-orange-500 flex gap-5 ">
+                <i class="ri-facebook-circle-line"></i>
+                <i class="ri-instagram-line"></i>
+                <i class="ri-youtube-line"></i>
+            </div>
+        </div>
+        <div class="mt-5  px-10 flex flex-col gap-4">
+            <h1 class="font-semibold text-2xl ">Links</h1>
+            <a  class="hover:text-amber-600" href="#">Home</a>
+            <a  class="hover:text-amber-600" href="#">About Us</a>
+            <a  class="hover:text-amber-600" href="#">Services</a>
+            <a  class="hover:text-amber-600" href="#">Menu</a>
+            <a  class="hover:text-amber-600" href="#">Blog</a>
+        </div>
+        <div class="px-10">
+            <h1 class=" mt-5 px-10 text-2xl font-semibold">Contact</h1>
+            <div class="address flex items-center gap-4 mt-6">
+                <i class="ri-map-pin-line text-orange-500 cursor-pointer"></i>
+                <h1 class="cursor-pointer hover:text-orange-500">205, Envato ka Yents, GovindPuri VijayNagar, ModiNagar, India</h1>
+            </div>
+            <div class="mobile-number flex  gap-5 mt-5">
+                <i class="ri-phone-fill text-orange-500"></i>
+                <div class="phone">
+                    <h1 class="hover:text-orange-500 cursor-pointer" >+91 724 803 8596</h1> 
+                    <h1 class="hover:text-orange-500 cursor-pointer"> +90 12 48 57 665</h1>
+                </div>
+            </div>
+            <div class="services flex gap-5 mt-5">
+                <i class="ri-mail-line text-orange-500"></i>
+                <div class="mail">
+                    <a class="hover:text-orange-500 cursor-pointer" href="#">services@foodor.com</a>
+                    <a class="hover:text-orange-500 cursor-pointer" href="#" >info@foodor.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end footer -->
+    <div class="copyright h-20 bg-zinc-600 flex items-center justify-center">
+        <h1 class="text-md text-center lg:text-xl font-semibold p-5">Copyright &copy; 2025 Foodies All rights reserved.</h1>
+    </div>
+</body>
+</html>
