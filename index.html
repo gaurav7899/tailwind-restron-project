@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="./src/output.css">
     <title>Food court</title>
 </head>
-<body class="m-0 p-0 box-border bg-amber-100 font-sans">
+<body class="m-0 p-0 box-border bg-amber-100 font-sans h-screen ">
+    <div class="main h-dvh ">
     <!-- header -->
     <header id="home-section">
         <div class="h-20 w-full  flex items-center justify-between" >
@@ -44,14 +45,24 @@
                         <span class="cart-count absolute bottom-4 left-4 bg-orange-500 w-6 h-6 rounded-full text-center ">2</span>
                     </div>
                 </div>
-                <i class="ri-menu-line lg:hidden text-2xl mr-5"></i>
+                <!-- toggle menu -->
+                <i id="menu-icon" class="ri-menu-line lg:hidden text-2xl mr-5 relative"></i>
+                <div id="mobile-menu" class="respo-navbar backdrop-blur-2xl absolute left-2 top-15 w-100 hidden ">
+                    <ol class=" flex flex-col items-center gap-2">
+                        <li><a class="text-2xl text-orange-500" href="#home-section">Home</a></li>
+                        <li><a class="text-2xl text-orange-500" href="#about-section">About</a></li>
+                        <li><a class="text-2xl text-orange-500" href="#">Menu</a></li>
+                        <li><a class="text-2xl text-orange-500" href="#">Contact</a></li>
+                        <li><a class="text-2xl text-orange-500" href="#">Blog</a></li>
+                    </ol>
+                </div>
             </nav>
         </div>
     </header>
     <!-- main -->
-    <section class="lg:flex gap-0">
+    <section class="flex flex-wrap-reverse gap-0">
         <div>
-        <div class="hero-text ">
+        <div class="hero-text">
             <h1 class=" ml-5 text-5xl leading-16 lg:leading-20 lg:text-7xl font-semibold lg:ml-40 lg:mt-30 lg:w-xl">Enjoy Our <br> Delicious Meal</h1>
             <p class=" ml-5 text-md mr-4  font-semibold  lg:ml-40 lg:font-medium mt-10 lg:w-xl">Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin ac rutrum neque, vel congue tellus duis venenatis nisi ligulavarius.</p>
         </div>
@@ -63,7 +74,7 @@
             </select>
             <i class="ri-map-pin-line text-amber-700"></i>
             <input type="text" name="" id="" placeholder="Drop your Location" class="border-none outline-none" >
-            <button class="bg-linear-65 from-orange-500 to-orange-900 mt-5 w-50 h-15 lg:ml-25 rounded-full text-md text-white font-semibold shadow-orange-900">Find Restaurant</button>
+            <button class="bg-linear-65 from-orange-500 to-orange-900 mt-5 w-50 h-15 lg:ml-25 rounded-full text-md text-white font-semibold shadow-orange-900 mb-5">Find Restaurant</button>
         </div>
         </div>
         <div class="hero-image">
@@ -112,7 +123,7 @@
     </div>
     <!-- About -->
     <!-- footer -->
-    <div id="about-section">
+    <div id="about-section relative">
     <div class=" subscribe lg:flex lg:items-center lg:justify-items-stretch h-50 gap-10 mt-10 bg-orange-500">
         <h1 class="text-2xl p-10 lg:text-5xl lg:font-semibold lg:ml-40 text-white"> Subscribe to our newsletter</h1>
         <div class="bg-zinc-100 ml-5 mr-5 h-10 lg:w-130 lg:h-14 flex justify-between rounded-full">
@@ -145,10 +156,10 @@
                 <i class="ri-map-pin-line text-orange-500 cursor-pointer"></i>
                 <h1 class="cursor-pointer hover:text-orange-500">205, Envato ka Yents, GovindPuri VijayNagar, ModiNagar, India</h1>
             </div>
-            <div class="mobile-number flex  gap-5 mt-5">
+            <div class="mobile-number flex   gap-5 mt-5">
                 <i class="ri-phone-fill text-orange-500"></i>
                 <div class="phone">
-                    <h1 class="hover:text-orange-500 cursor-pointer" >+91 724 803 8596</h1> 
+                    <h1 class="hover:text-orange-500 cursor-pointer">+91 7248038596</h1> 
                     <h1 class="hover:text-orange-500 cursor-pointer"> +90 12 48 57 665</h1>
                 </div>
             </div>
@@ -166,5 +177,10 @@
         <h1 class="text-md text-center lg:text-xl font-semibold p-5">Copyright &copy; 2025 Foodies All rights reserved.</h1>
     </div>
     </div>
+    <div class="arrow-key  right-5 bottom-10 bg-amber-600 w-10 h-10 flex items-center justify-center rounded-full fixed lg:hidden">
+        <a href="#home-section"><i class="ri-arrow-up-wide-fill"></i></a>
+    </div>
+</div>
+<script src="./script.js"></script>
 </body>
 </html>
